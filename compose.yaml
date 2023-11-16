@@ -32,5 +32,9 @@ services:
       - "5601:5601"
     environment:
       - 'ELASTICSEARCH_HOSTS=["http://elasticsrv:9200"]'
+  ssh4logs:
+    image: ssh4logs
+    ports:
+      - "666:22"
 volumes:
   es-data-elasticsrv:
