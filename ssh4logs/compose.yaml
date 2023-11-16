@@ -1,9 +1,0 @@
-services:
-  ubuntussh:
-    image: ubuntu_ssh
-    ports:
-      - "2222:22"
-#    volumes:
-#      - "ubuntu-vol"
-#volumes:
-#  ubuntu-vol:
