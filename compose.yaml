@@ -33,8 +33,9 @@ services:
     environment:
       - 'ELASTICSEARCH_HOSTS=["http://elasticsrv:9200"]'
   ssh4logs:
-    image: ssh4logs
+    image: ssh4logs:logstash
     ports:
       - "666:22"
+      - "0.0.0.0:9600:9600"
 volumes:
   es-data-elasticsrv:
